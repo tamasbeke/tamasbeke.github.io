@@ -6,7 +6,6 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-	<script src="../src/gps-entity-place.js"></script>
   </head>
 
   <body style="margin: 0; overflow: hidden;">
@@ -19,11 +18,8 @@
         value="Smart City lab - Augmented Reality."
         look-at="[gps-camera]"
         scale="120 120 120"
-		color="red" rotation="0 0 0"
       ></a-text>
-	  <a-sphere gps-entity-place="latitude: 47.46858005752861; longitude: 19.001751028003845;"  radius=2 color=red></a-sphere>
-      <a-camera id="camera" user-height="1.8" gps-camera-position gps-camera-rotation gps-camera-debug></a-camera>
-	  
+      <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
 </html>
